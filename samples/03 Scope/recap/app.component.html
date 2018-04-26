@@ -1,0 +1,9 @@
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts">
+        <span>{{contact.name}}</span>
+    </li>
+</ul>
+
+<app-clock format="$ctrl.clockFormat"></app-clock>
+
+<button ng-click="$ctrl.changeFormat()">Change Format</button>
