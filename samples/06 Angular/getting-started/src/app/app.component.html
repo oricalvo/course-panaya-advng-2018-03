@@ -1,0 +1,7 @@
+<h1>Hello Angular 6</h1>
+
+<ul>
+  <li *ngFor="let contact of contacts">
+    <app-contact-details [contact]="contact" (onDelete)="onContactDelete($event)"></app-contact-details>
+  </li>
+</ul>
