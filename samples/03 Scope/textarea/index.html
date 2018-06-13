@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <textarea>Hello
+        123
+    </textarea>
+
+    <script>
+        document.querySelector("textarea").addEventListener("keydown", function(e) {
+            console.log("keydown");
+
+            e.preventDefault();
+
+            //return false;
+        });
+
+        document.querySelector("textarea").addEventListener("keyup", function(e) {
+            console.log("keyup");
+
+            e.preventDefault();
+
+            // return false;
+        });
+    </script>
+</body>
+</html>

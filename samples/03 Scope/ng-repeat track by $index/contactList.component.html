@@ -1,0 +1,11 @@
+<h2>Contact List</h2>
+
+<button ng-click="$ctrl.reload()">Reload</button>
+
+<button ng-click="$ctrl.edit()">Edit</button>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts track by $index">
+        <contact-details contact="contact"></contact-details>
+    </li>
+</ul>

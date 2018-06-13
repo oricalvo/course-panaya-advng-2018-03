@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+app-modal .root {
+    display: none;
+    width: 20em;
+    height: 20em;
+    border: solid black 1px;
+}
+
+app-modal .root .content {
+    padding: 1em;
+}
+
+app-modal .root.active {
+    display: inline-block;
+}
+
+app-modal .root .title {
+    background-color: rgb(200, 200, 200);
+    min-height: 1em;
+}

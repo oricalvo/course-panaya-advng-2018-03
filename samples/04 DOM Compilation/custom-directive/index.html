@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <h1>{{title}}</h1>
+
+        <div ng-repeat="contact in contacts">
+            <input my-model="contact.name">
+            <span my-bind="contact.name"></span>
+            <button ng-click="change(contact)">Change</button>
+            <!--<span ng-bind="userName"></span>-->
+        </div>
+
+
+        <form></form>
+        <form></form>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="button.directive.js"></script>
+    <script src="model.directive.js"></script>
+    <script src="bind.directive.js"></script>
+    <script src="home.controller.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

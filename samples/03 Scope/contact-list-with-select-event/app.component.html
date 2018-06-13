@@ -1,0 +1,11 @@
+<app-contact-list
+        contacts="$ctrl.contacts"
+        on-contact-activated="$ctrl.onContactActivated($event)">
+</app-contact-list>
+
+<button ng-click="$ctrl.dump()">Dump</button>
+
+<div>
+    <input ng-model="$ctrl.newName">
+    <button ng-click="$ctrl.add()">Add</button>
+</div>

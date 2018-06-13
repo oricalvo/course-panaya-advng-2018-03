@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <button ng-click="run()">Run</button>
+
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
